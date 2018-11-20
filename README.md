@@ -1,24 +1,27 @@
-# README
+# THP Mardi S8
+##  Faire des manipulations de DOMs avec jQuery :
+Enoncé : Puisque tout le monde s'amuse à employer le mot startup pour toute entreprise ayant un site internet, nous allons disrupter un secteur très populaire, celui des listes. Voici le pitch (faut pas trop le dire à tout le monde, j'ai pas trop envie qu'on nous vole l'idée) : c'est une app où les gens pourront créer des listes de tâches, et assigner des petites tâches : par exemple :
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Conquérir le monde :
 
-Things you may want to cover:
+    1 : Faire THP
+    2: ???
+    3: Profit
 
-* Ruby version
+Avant de lever des millions, il nous faut un site internet. Ce sera le projet du jour.
 
-* System dependencies
+## Pour le tester
+En local: 
+*faire bundle install
+*créer la base de donnée avec rails db:create
+*faire les migrations avec rails db:migrate
+*seeder la page avec rails db:seed
 
-* Configuration
+## Lien Heroku ::tiger:
+[Lien Growth Hacking sur Heroku](https://growth-hacking-thp.herokuapp.com/)
 
-* Database creation
+## Projet de groupe :tea: :
 
-* Database initialization
+* Guillaume Pichot   slack/  @Guillaume :tropical_fish:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+:end: :end:
