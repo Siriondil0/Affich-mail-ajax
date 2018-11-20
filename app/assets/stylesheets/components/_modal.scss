@@ -1,0 +1,18 @@
+/*let target has the same value as modal-dialog*/
+#myModal {
+  width:auto;
+  height:auto;
+  margin:0 auto;
+  background: green;
+  position: absolute;
+  float: left;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/*modify image inside modal-dialog*/
+.modal-dialog,.modal-dialog img { /*same value to avoid overwidth*/
+  width:40%;
+  height:40%;
+  margin:0 auto;
+}

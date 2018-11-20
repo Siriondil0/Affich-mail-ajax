@@ -1,0 +1,27 @@
+ <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content container">
+    <div class="modal-header">
+      <h2 class="text-center">Connexion</h2>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+           &times;       
+      </button>
+    </div>
+    <div class="modal-body">  
+      <%= form_for(:user, :url => session_path(:user)) do |f| %>
+        <div class="email-container">
+          <%= f.text_field :email, :class =>"form-control",placeholder: "Email", value:"" %>
+        </div>
+        <div class="password-container">
+          <%= f.password_field :password,:label =>"Password", :class =>"form-control", placeholder:"Password", value:""%>
+        </div>
+          <%= f.submit 'Login', :class =>"form-control" %>
+          <%= f.check_box :remember_me, label: "Remember me", value: "true" %>
+          <%= f.label :remember_me %>
+      <% end %>
+    </div>
+  </div>
+
+</div>
