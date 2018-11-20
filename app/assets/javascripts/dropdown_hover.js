@@ -1,7 +1,8 @@
 $(document).ready(function() {
-  $('ul.nav li.dropdown').hover(function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+  $('.nav-dropdown-content').hover(function() {
+    $(this).find('.nav-dropdown-content').stop(true, true).delay(200).fadeIn(500);
     }, function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+    $(this).find('.nav-dropdown-content').stop(true, true).delay(200).fadeOut(500);
   });
+  
 });
