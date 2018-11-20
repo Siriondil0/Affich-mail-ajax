@@ -14,13 +14,14 @@ ul, li {
   position:absolute;
   right: 0;
   display:none;
-  min-width: 160px;
-  border: 1px solid #1c1c1c;
+  min-width: 130px;
+  padding: 8px 0px 0px 0px;
 }
 
 .nav-down {
-  background-color: #302f2f;
+  background-color: #302f2f00;
   min-width: 160px;
+  display: inline-block;
 }
 
 .nav-down a {
@@ -35,6 +36,7 @@ ul, li {
   font-weight:bold;
   color: #F00880;
 }
-#btn-modal-in #btn-modal-up{
+
+.test1{
   width: 100%;
 }

@@ -18,7 +18,7 @@ En local:
 *seeder la page avec rails db:seed
 
 ## Lien Heroku ::tiger:
-[Lien Growth Hacking sur Heroku](https://growth-hacking-thp.herokuapp.com/)
+[Lien To do list sur Heroku](https://to-do-list-thp-s8.herokuapp.com/)
 
 ## Projet de groupe :tea: :
 
