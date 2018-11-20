@@ -6,8 +6,10 @@ $(document).ready(function() {
     paused = true;
     // Change to the previous image
     $('#img_' + currentImage).stop().fadeOut(100);
+    $('#' + currentImage).css("background-color", "#bbb");
     decreaseImage();
     $('#img_' + currentImage).stop().fadeIn(100);
+    $('#' + currentImage).css("background-color", "rgb(15, 13, 13)");
     interval.reset(5000)
     paused = false
   }); 
@@ -15,8 +17,10 @@ $(document).ready(function() {
     paused = true;
     // Change to the next image
     $('#img_' + currentImage).stop().fadeOut(100);
+    $('#' + currentImage).css("background-color", "#bbb");
     increaseImage();
     $('#img_' + currentImage).stop().fadeIn(100);
+    $('#' + currentImage).css("background-color", "rgb(15, 13, 13)");
     clearInterval(interval);
     interval.reset(5000)
     paused = false
@@ -26,13 +30,16 @@ $(document).ready(function() {
     //change image to selected span
     var spanId = $(this).attr('id');
     $('#img_' + currentImage).stop().fadeOut(100);
+    $('#' + currentImage).css("background-color", "#bbb");
     showImage(spanId);
     $('#img_' + currentImage).stop().fadeIn(100);
+    $('#' + currentImage).css("background-color", "rgb(15, 13, 13)");
     interval.reset(5000)
     paused = false
   }); 
 
   var currentImage = 1;
+  $('#' + currentImage).css("background-color", "rgb(15, 13, 13)");
   var totalImages = $("div.img").length;
   // Thumbnail image controls
 
@@ -60,9 +67,11 @@ $(document).ready(function() {
 
   interval = new Timer(function() {
 		if (paused === false) { 
-			$('#img_' + currentImage).stop().fadeOut(100);
+      $('#img_' + currentImage).stop().fadeOut(100);
+      $('#' + currentImage).css("background-color", "#bbb");
       increaseImage();
       $('#img_' + currentImage).stop().fadeIn(100);
+      $('#' + currentImage).css("background-color", "rgb(15, 13, 13)");
 		};
   },  5000);
 
