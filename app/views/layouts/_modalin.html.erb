@@ -1,0 +1,36 @@
+<!-- The Modal -->
+  <div id="myModalIn" class="modal col-3 md-3">
+
+  <!-- Modal content -->
+  <div class="modal-content container">
+    <div class="modal-header">
+      <h2 class="text-center">Sign in</h2>
+      <button type="button" class="close-in" data-dismiss="modal" aria-hidden="true">
+           &times;       
+      </button>
+    </div>
+    <div class="modal-body ">  
+      <%= form_for(:user, :url => registration_path(:user)) do |f| %>
+        <div class="email-container">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %> 
+        </div>
+        <div class="password-container">
+          <%= f.label :password %>
+          <% if @minimum_password_length %>
+           <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "new-password" %>
+        </div>
+        <div class="password-confirm-container">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+        </div>
+        <div class="button-container">
+        <%= f.submit 'Sign up', :class =>"form-control btn btn-info" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

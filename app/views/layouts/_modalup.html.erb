@@ -1,11 +1,11 @@
  <!-- The Modal -->
-  <div id="myModal" class="modal">
+  <div id="myModalUp" class="modal col-3 md-3">
 
   <!-- Modal content -->
   <div class="modal-content container">
     <div class="modal-header">
-      <h2 class="text-center">Connexion</h2>
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+      <h2 class="text-center">Sign up</h2>
+      <button type="button" class="close-up" data-dismiss="modal" aria-hidden="true">
            &times;       
       </button>
     </div>
@@ -17,9 +17,14 @@
         <div class="password-container">
           <%= f.password_field :password,:label =>"Password", :class =>"form-control", placeholder:"Password", value:""%>
         </div>
-          <%= f.submit 'Login', :class =>"form-control" %>
+        <div class="login-container btn btn-info">
+          <%= f.submit 'Login', :class =>"form-control btn btn-info" %>
+        </div>
+        <div class="check-container">
           <%= f.check_box :remember_me, label: "Remember me", value: "true" %>
           <%= f.label :remember_me %>
+          <%= link_to "Forgot your password?", new_password_path(:user) %>
+        </div>
       <% end %>
     </div>
   </div>

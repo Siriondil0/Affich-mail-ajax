@@ -30,10 +30,10 @@
         <ul class="dropdown-menu dropdown-menu-right">
           <% unless user_signed_in? %>
             <li class="nav-item">
-              <button id="btn-modal">Log in</button>
+              <button class="btn btn-info" id="btn-modal-in">Sign in</button>
             </li>
             <li class="nav-item">
-              <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+              <button class="btn btn-info" id="btn-modal-up">Sign up</button>
             </li>
             <% else %>
             <li class="nav-item">
