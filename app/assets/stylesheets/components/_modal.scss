@@ -1,40 +1,16 @@
 
 // Modal
-.modaloverlay{
-  background:rgba(0,0,0,0.8);
-  bottom:0;
-  left:0;
-  opacity:0;
-  pointer-events:none;
-  position:fixed;
-  right:0;
-  top:0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  z-index:-1;
-  display: none;
-  &:target{
-    display: block;
-    opacity:1;
-    pointer-events:auto;
-    z-index:99999;
-  }
+
   .modal{
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0);
     height: 100%;
-    position:relative;
-    margin:0 auto;
-    padding:3em;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    @media (min-width: 60em) {
-      height:75%;
-  	 margin:5% auto;
-  	 max-height: 57em;
-      max-width:66em;
-      width:85%;
-    }
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto; 
+    
   }
   .modal-body{
     margin:5% auto;
@@ -43,4 +19,3 @@
   .login-container{
     display: inline-block
   }
-}
