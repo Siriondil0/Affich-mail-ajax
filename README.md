@@ -20,7 +20,7 @@ En local:
 ## Lien Heroku ::tiger:
 [Lien To do list sur Heroku](https://to-do-list-thp-s8.herokuapp.com/)
 
-## Projet de groupe :tea: :
+## Projet réalisé par :tea: :
 
 * Guillaume Pichot   slack/  @Guillaume :tropical_fish:
 
