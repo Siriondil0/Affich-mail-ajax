@@ -25,23 +25,23 @@
     <ul class="nav navbar-right navbar-nav ">
       <li class ="nav-list nav-dropdown">
         <a href="javascript:void(0)" class="nav-dropbtn"><img class="rounded-circle" height="50px" width="50px" src="http://digitalspyuk.cdnds.net/17/25/320x320/square-1498216547-avatar-neytiri.jpg"></a>
-        <ul class="nav-dropdown-content">
+        <div class="nav-dropdown-content">
           <% unless user_signed_in? %>
-            <li class="nav-item">
+            <div class="nav-item nav-down">
               <button class="btn btn-info" id="btn-modal-in">Sign in</button>
-            </li>
-            <li class="nav-item">
+            </div>
+            <div class="nav-item nav-down">
               <button class="btn btn-info" id="btn-modal-up">Sign up</button>
-            </li>
+            </div>
             <% else %>
-            <li class="nav-item">
+            <div class="nav-item nav-down">
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link btn btn-info" %>
-            </li>
+            </div>
           <% end %>
-          </ul>
+        </div>
         </div>
       </li>   
-    </ul  >
+    </ul>
     </div>
    
 
