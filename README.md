@@ -1,14 +1,10 @@
 # THP Mardi S8
-##  Faire des manipulations de DOMs avec jQuery :
-Enoncé : Puisque tout le monde s'amuse à employer le mot startup pour toute entreprise ayant un site internet, nous allons disrupter un secteur très populaire, celui des listes. Voici le pitch (faut pas trop le dire à tout le monde, j'ai pas trop envie qu'on nous vole l'idée) : c'est une app où les gens pourront créer des listes de tâches, et assigner des petites tâches : par exemple :
+##  Mailer en AJAX :
+Enoncé : Pour ce projet, nous allons te demander de faire un Email Viewer, c'est à dire implémenter une page dans laquelle il y aura 2 colonnes :
 
-Conquérir le monde :
+    *une colonne avec la liste des emails
+    *une colonne qui affiche le contenu de l'email sur lequel tu viens de cliquer
 
-    1 : Faire THP
-    2: ???
-    3: Profit
-
-Avant de lever des millions, il nous faut un site internet. Ce sera le projet du jour.
 
 ## Pour le tester
 En local: 
@@ -18,7 +14,7 @@ En local:
 *seeder la page avec rails db:seed
 
 ## Lien Heroku ::tiger:
-[Lien To do list sur Heroku](https://to-do-list-thp-s8.herokuapp.com/)
+[Lien Mailer sur Heroku](https://mail-thp-s8j4.herokuapp.com/emails)
 
 ## Projet réalisé par :tea: :
 
