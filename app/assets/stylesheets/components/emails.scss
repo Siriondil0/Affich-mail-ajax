@@ -2,10 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.liste {
+.list {
   align-items: left;
   overflow: scroll;
-  height: 430px;
+	height: 400px;
+		
 }
 .list-group-item{
   background-color: rgba(#e8e8e8, 0.2) !important;

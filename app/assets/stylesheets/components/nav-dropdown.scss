@@ -12,10 +12,12 @@ ul, li {
 
 .nav-dropdown-content {
   position:absolute;
+  z-index: 999;
   right: 0;
   display:none;
   min-width: 130px;
   padding: 8px 0px 0px 0px;
+  overflow: visible;
 }
 
 .nav-down {
