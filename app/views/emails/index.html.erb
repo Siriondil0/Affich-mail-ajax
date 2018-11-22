@@ -1,0 +1,17 @@
+<section class="content">
+  <div class="container">
+  <div class="row viewer">
+  <div class="col-3 liste">
+    <div class="list-group">
+      <%= render 'emails/liste', :locals =>{email: @emails} %>
+    </div>
+  </div>
+  <div class="col-9 content-mails">
+    <% email = [] %>
+    <% if !email[0].nil? %>
+      <%= render 'emails/contenu' %>
+    <% end %>
+  </div>
+  </div>
+  </div>
+</section>

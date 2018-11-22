@@ -1,0 +1,36 @@
+// Place all the styles related to the Email controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.liste {
+  align-items: left;
+  overflow: scroll;
+  height: 430px;
+}
+.list-group-item{
+  background-color: rgba(#e8e8e8, 0.2) !important;
+  color: white !important;
+  border: none !important;
+}
+
+
+.list-group-item:hover {
+  background-color: rgba(#e8e8e8, 0.4) !important;
+}
+
+.list-group-item:active {
+  background-color: #e4eaff !important;
+}
+
+.bouton-d {
+  float: right;
+  display: inline-block;
+}
+
+.read {
+	font-weight:normal;
+}
+
+.unread {
+  font-weight: bold;
+}

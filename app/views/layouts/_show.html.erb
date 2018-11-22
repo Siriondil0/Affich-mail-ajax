@@ -1,0 +1,18 @@
+ <div>
+   <p id="notice"><%= notice %></p>
+</div>
+
+<div id="contenu">
+	<p>
+		<h2>Object: <%= @email.object %></h2>
+
+	</p>
+	<p>
+	  <strong>Contenu:</strong><br>
+	  <%= @email.body %>
+	</p>
+	
+	<div id="crud">
+		<%= link_to 'Supprimer le mail', email_path(@email), method: :delete, data: { confirm: 'Êtes-vous sûr?' }, remote: true, class:'delete_email' %>
+	</div>
+</div>

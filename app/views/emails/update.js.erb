@@ -1,0 +1,7 @@
+$(document).ready(function() {
+function renderPage() {
+    $(".content-mails").html("");
+    $("#<%= @email.id %>").attr('class','show list-group-item list-group-item-action unread');
+};
+renderPage();
+});

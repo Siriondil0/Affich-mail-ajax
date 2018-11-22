@@ -1,0 +1,8 @@
+<div class="container contenu">
+  <%= link_to " Mark as unread", email_path(@email), class: "btn btn-sm btn-info bouton-ur far fa-trash-alt", remote: true,  method: :PATCH , data: { confirm: "Are you sure?" } %>
+  <%= link_to " Delete", email_path(@email), class: "btn btn-sm btn-danger bouton-d far fa-trash-alt", remote: true,  method: :delete, data: { confirm: "Are you sure?" } %>
+  <p><p>
+  <h3><%= @email.object %></h3>
+  <hr>
+  <p><%= @email.body %></p>
+</div>
